@@ -71,11 +71,11 @@ survdiff(Surv(timepoint, mortality) ~ treatment, data = WT_survival) #p = 2e-16
 survival_no_WT <- survival%>%filter(Parental_cross!="WT")
 
 ### With WT larvae removed, plot treatment by parental cross (Model 2)
-Par_treatment_fit_2 <- surv_fit(coxph(Surv(timepoint, mortality) ~ treatment, data=survival_no_WT), data=survival_no_WT)
+Par_treatment_fit <- surv_fit(coxph(Surv(timepoint, mortality) ~ treatment, data=survival_no_WT), data=survival_no_WT)
 
 update_geom_defaults("text",list(size=2))
 
-F2A <- ggsurvplot(Par_treatment_fit_2, data=survival_no_WT, 
+F2A <- ggsurvplot(Par_treatment_fit, data=survival_no_WT, 
                  facet.by=c("Father","Mother"),
                  palette = c("#03cafc", "#f24455"),
                  pval = TRUE,
