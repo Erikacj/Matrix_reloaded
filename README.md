@@ -9,7 +9,7 @@ Data and code associated with:
 <sup>2</sup> Department of Bioengineering, University of California, Berkeley, CA, USA  
 
 
-Published in *Nature Heredity*: https://https://www.nature.com/articles/s41437-024-00681-6#citeas
+Published in *Nature Heredity*: https://www.nature.com/articles/s41437-024-00681-6
 
 
 
